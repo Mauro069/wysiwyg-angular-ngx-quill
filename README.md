@@ -1,0 +1,1 @@
+# wysiwyg-angular-ngx-quill
