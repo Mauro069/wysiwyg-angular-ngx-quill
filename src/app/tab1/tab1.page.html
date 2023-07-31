@@ -1,17 +1,22 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
+    <ion-title> Tab 1 </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <quill-editor [(ngModel)]="myText" [styles]="{height: '400px'}">
+  </quill-editor>
+  {{ myText }}
+  <br />
+  <hr />
+  <button (click)="preview()">Preview</button>
+  <br />
+  <hr />
+  <div
+    style="height: fit-content; margin-top: 1rem"
+    *ngFor="let summary of summaries"
+  >
+    <quill-view [content]="summary" format="object">{{summaries}}</quill-view>
+  </div>
 </ion-content>
