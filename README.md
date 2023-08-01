@@ -23,5 +23,7 @@ QuillConfigModule.forRoot({
 ```
 ### Docs
 https://quilljs.com/docs/configuration/
+<br />
 https://www.npmjs.com/package/ngx-quill
+<br />
 https://github.com/KillerCodeMonkey/ngx-quill
