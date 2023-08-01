@@ -21,3 +21,7 @@ QuillConfigModule.forRoot({
 // format puede ser => 'object' | 'json' | 'text' | 'html'
 // En placeholder mandas un placeholder (es opcional)
 ```
+### Docs
+https://quilljs.com/docs/configuration/
+https://www.npmjs.com/package/ngx-quill
+https://github.com/KillerCodeMonkey/ngx-quill
