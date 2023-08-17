@@ -23,8 +23,8 @@ export class Tab1Page {
 
     // Asi nos muestra el summary pero sin estilos digamos
     // El format en object pondriamos
-    console.log('Summary => ', this.myText.ops[0].insert);
-    this.summaries.push([this.myText.ops[0]]);
+    // console.log('Summary => ', this.myText.ops[0].insert);
+    this.summaries.push(this.myText);
 
     // Asi no hay summary pero tiene estilos
     // El format en html pondriamos
