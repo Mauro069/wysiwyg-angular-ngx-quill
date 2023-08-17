@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { dataDummy } from 'examples/object';
 
 import Quill, { Delta } from 'quill';
 import BlotFormatter from 'quill-blot-formatter/dist/BlotFormatter';
@@ -11,7 +12,7 @@ Quill?.register('modules/blotFormatter', BlotFormatter);
   styleUrls: ['tab1.page.scss'],
 })
 export class Tab1Page {
-  myText: any = null;
+  myText: any = dataDummy;
   summaries: any[] = [];
 
   constructor() {}
@@ -30,6 +31,6 @@ export class Tab1Page {
     // console.log('Summary => ', this.myText);
     // this.summaries.push(this.myText);
 
-    this.myText = null;
+    // this.myText = null;
   }
 }
